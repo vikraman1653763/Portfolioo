@@ -1,0 +1,185 @@
+/* CSS Variables for Font Sizes */
+
+  
+  /* Main Hero Section Container */
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px 20px; */
+    color: #ffffff;
+    gap: 20px;
+    width: 98vw;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+.hero-container{
+    padding: 1em 10rem;
+    display: flex;
+  }
+  
+  /* Left Content */
+  .hero-left {
+    width: 75%;
+  }
+  
+  .hero-title {
+    font-size: var(--fs-xl);
+    margin-bottom: 15px;
+    color: var(--co-1);
+  }
+  .hero-job {
+    font-size: var(--fs-l);
+    color: var(--co-3);
+    margin: 1em 0em;
+    height: max-content;
+  }
+  
+  
+  .hero-description {
+    font-size: var(--fs-s);
+    margin-bottom: 20px;
+    color: var(--co-2); 
+  }
+  
+  .hero-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-link {
+    color: var(--co-1);
+    text-decoration: none;
+    font-size: var(--fs-m);
+    transition: color 0.3s ease;
+  }
+  
+  .hero-link:hover {
+    color: var(--co-3); /* Gold effect on hover */
+  }
+  
+  .hero-resume {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--co-2);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: var(--fs-s);
+    border: 1px solid var(--co-2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-resume:hover {
+    background-color: var(--co-1);
+    color: var(--co-4);
+    border: 1px solid var(--co-4);
+  }
+  
+  /* Right Content */
+  .hero-right {
+
+    display: flex;
+    justify-content: center;
+    height: 25em;
+    width: 50%;
+    border: 1px solid var(--co-3);
+    border-radius: 1em;
+    color: var(--co-3);
+
+  }
+  
+  .hero-image {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      width: 90vw !important;
+      overflow: hidden;
+    }
+  
+    .hero-left {
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: var(--fs-xl); /* Slightly smaller font for tablets */
+    }
+  .hero-job{
+    font-size: var(--fs-l);
+  }
+    .hero-description {
+      font-size: var(--fs-s); /* Adjust font size for better fit */
+    }
+  
+    .hero-right {
+      width: 80%; 
+      border: none;
+    }
+    .hero-links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+  }
+  
+  /* Mobile View: Below 767px */
+  @media screen and (max-width: 767px) {
+    .hero-section{
+      margin-top: 0%;
+    }
+    .hero-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 1em;
+      gap: 0em;
+
+    }
+  
+    .hero-left {
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: var(--fs-m); /* Smaller font for mobile */
+    }
+    .hero-job{
+      font-size: var(--fs-m);
+    }
+  
+    .hero-description {
+      font-size: var(--fs-s); 
+      text-align: center;/* Adjust font size */
+    }
+  
+    .hero-links {
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .hero-resume {
+      width: auto;
+      text-align: center;
+    }
+  
+    .hero-right {
+      width: 100%; /* Make image fit within mobile screens */
+      border: none;
+    }
+  
+    .hero-image {
+      width: 80%; /* Ensure image scales properly */
+      border-radius: 10px;
+      object-fit: contain;
+      height: auto;
+    }
+
+  }
+  

@@ -1,0 +1,43 @@
+:root {
+  --fs-xxs: .5rem; 
+  --fs-xs: .8rem; 
+  --fs-s: 1rem; 
+  --fs-m: 1.5rem;  
+  --fs-l: 2rem;   
+  --fs-xl: 3rem;  
+  --fs-xxl: 4rem;  
+  --fs-xxxl: 8rem; 
+  --co-1: #ff9900;
+  --co-2: #fff;
+  --co-3:#00ffa6;
+  --co-4:#000;
+  --co-5:#d4d4d4;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--co-1) var(--co-4);
+  scroll-behavior: smooth;
+  scroll-snap-type:y mandatory;
+  scroll-snap-align: start;
+  
+    
+}
+@media screen and (max-width: 767px) {
+  .main{
+    overflow: hidden;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black; /* Fallback background color */
+  background-image: url('/assets/bg.webp'); /* Path to your image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: cover; /* Scale image to cover entire viewport */
+  background-attachment: fixed; /* Fix the image in place */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* IE-specific scrollbar styling */
+
+}

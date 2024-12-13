@@ -1,0 +1,115 @@
+.academic-container {
+  padding: 1em 10rem;
+  border-radius: 8px;
+}
+
+.academic-title {
+  text-align: center;
+  font-size: var(--fs-xl);
+  margin-bottom: 1.5rem;
+  color: var(--co-1);
+}
+
+.academic-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.academic-card {
+  border: 1px solid #2f2e2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: all 0.3s ease-in-out !important;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.academic-card:hover {
+  transform: translateY(-10px) !important;
+  background-color: var(--co-1);
+  box-shadow: 5px 5px 5px var(--co-3);
+}
+
+.academic-card:hover .academic-card-degree, .academic-card:hover .academic-card-institution {
+  color: var(--co-3);
+}
+
+.academic-image-container {
+  height: auto;
+  width: 100%;
+}
+
+.academic-card-image {
+  width: 5em;
+  margin: 1em;
+  object-position: center;
+  object-fit: contain;
+}
+
+.academic-card-detail {
+  margin: 0em 0.5em;
+}
+
+.academic-card-degree {
+  font-size: var(--fs-m);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--co-2);
+}
+
+.academic-card-institution {
+  font-size: var(--fs-s);
+  color: var(--co-1);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 767px) {
+  .academic-container {
+    padding: 1em;
+  }
+  .academic-title{
+    font-size: var(--fs-l);
+  }
+  .academic-cards {
+    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+  .academic-card {
+    max-width: 100%;
+  }
+  .academic-card-degree{
+    font-size: var(--fs-m);
+  }
+  .academic-card-institution{
+    font-size: var(--fs-s);
+  }
+  .academic-card-image {
+    width: 4em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .academic-container {
+    padding: 1em 5rem;
+  }
+  .academic-title{
+    font-size: var(--fs-l);
+  }
+  .academic-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .academic-card {
+    max-width: 45%;
+  }
+}

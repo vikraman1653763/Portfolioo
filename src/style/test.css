@@ -1,0 +1,13 @@
+.parent {
+    height: 400vh; /* Ensures enough scrolling space */
+    position: relative; /* Sticky respects the nearest positioned ancestor */
+    border: 1px solid red;
+}
+
+.child {
+    position: sticky; /* Enables sticky positioning */
+    top: 0; /* Sticks to the top of the parent when scrolling */
+    height: 20em;
+    width: 10em;
+    background-color: rebeccapurple;
+}
