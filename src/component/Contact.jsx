@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="footer-copy">Copyright © 2024</div>
         <div className="footer-social">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/1GDqYu47ax/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -56,7 +56,7 @@ const Contact = () => {
             <FaSquareFacebook />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/sanji_0.3/profilecard/?igsh=MXJjbmc1MXB0bTBudw== "
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -65,7 +65,7 @@ const Contact = () => {
             <FaSquareInstagram />
           </a>
           <a
-            href="https://www.threads.net"
+            href="https://www.threads.net/@sanji_0.3"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

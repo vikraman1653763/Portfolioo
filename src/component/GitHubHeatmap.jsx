@@ -21,11 +21,10 @@ const GitHubHeatmap = () => {
   
   // Function to fetch contributions based on the selected year
   const fetchContributions = async (year) => {
-    const username = "githubUsername"; 
-    const token ='githubPresonaltoken';  
+  
     // Set start and end dates for the selected year
-    const startDate = new Date(year, 0, 1); // January 1st of the selected year
-    const endDate = new Date(year + 1, 0, 0); // December 31st of the selected year
+    const startDate = new Date(year, 0, 1); // January 1st  
+    const endDate = new Date(year + 1, 0, 0); // December 31st  
 
     const query = `
       query {
@@ -98,8 +97,8 @@ const GitHubHeatmap = () => {
 
         <section className="git-commit" data-aos="fade-up">
           <CalendarHeatmap
-            startDate={new Date(selectedYear, 0, 1)} // January 1st of the selected year
-            endDate={new Date(selectedYear + 1, 0, 0)} // December 31st of the selected year
+            startDate={new Date(selectedYear, 0, 1)} // January 1st  
+            endDate={new Date(selectedYear + 1, 0, 0)} // December 31st  
             values={contributions}
             tooltipDataAttrs={(value) => ({
               'data-tooltip': value
