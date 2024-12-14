@@ -21,8 +21,8 @@ const GitHubHeatmap = () => {
   
   // Function to fetch contributions based on the selected year
   const fetchContributions = async (year) => {
-    const username = "vikraman1653763"; // Your GitHub username
-
+    const username = "githubUsername"; 
+    const token ='githubPresonaltoken';  
     // Set start and end dates for the selected year
     const startDate = new Date(year, 0, 1); // January 1st of the selected year
     const endDate = new Date(year + 1, 0, 0); // December 31st of the selected year

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../style/Navbar.css"; // Import styles
 import { LiaVine } from "react-icons/lia";
 import { fallDown as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,30 +32,18 @@ const Navbar = () => {
 
       {/* Burger menu for mobile view */}
       <div className="burger-menu">
-        <Menu right>
-          <a href="#about" className="menu-item">
-            About
-          </a>
-          <a href="#work" className="menu-item">
-            Work
-          </a>
-          <a href="#contact" className="menu-item">
-            Contact
-          </a>
+      <Menu right outerContainerId="outer-container" >
+      <a href="#about" className="menu-item">About</a>
+          <a href="#work" className="menu-item">Work</a>
+          <a href="#contact" className="menu-item">Contact</a>
         </Menu>
       </div>
 
       {/* Links for desktop view */}
       <div className="navbar-right">
-        <a href="#about" className="navbar-link">
-          About
-        </a>
-        <a href="#work" className="navbar-link">
-          Work
-        </a>
-        <a href="#contact" className="navbar-link">
-          Contact
-        </a>
+      <a href="#about" className="navbar-link">About</a>
+<a href="#work" className="navbar-link">Work</a>
+<a href="#contact" className="navbar-link">Contact</a>
       </div>
     </nav>
   );

@@ -1,18 +1,18 @@
 .color-empty {
-    fill:rgb(210, 209, 209) !important;
+    fill:#dadada1a !important;
     
   }
   .color-scale-1 {
-    fill: #00ffa6;
+    fill: #01613f;
   }
   .color-scale-2 {
-    fill: #02cc85;
-  }
-  .color-scale-3 {
     fill: #01a169;
   }
+  .color-scale-3 {
+    fill: #02cc85;
+  }
   .color-scale-4 {
-    fill: #01613f;
+    fill: #00ffa6;
   }
   
   .git-box{
@@ -46,42 +46,43 @@
     width: 60%;
     display: flex;
     justify-content: end;
-}
-.git-btn button{
-    background-color: var(--co-4);
+  }
+  .git-btn button{
+    background-color: rgba(0, 0, 0, 0.169);
     padding: .5em 1em;
+    
     margin: 1em;
     border-radius: 5px;
     border: 1px solid var(--co-3);
-
+    
     color: var(--co-3);
   }
-
+  
   .git-btn button:hover{
     border: 1px solid var(--co-1);
   }
-
+  
   @media screen and (max-width: 767px) {
     
     .git-container{
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
+      padding: 0%;
+      margin: 0%;
+      width: 100%;
     }
     .git-title{
-        font-size: var(--fs-l);
+      font-size: var(--fs-l);
     }
     .git-commit{
-        width:90%;
-        padding: 1%;
-        
+      width:90%;
+      padding: 1%;
+      
     }
     .git-btn{
-        width: 100%;
+      width: 100%;
         justify-content: center;
     }
     .git-btn{
-        font-size: var(--fs-s);
-        padding: auto;
+      font-size: var(--fs-s);
+      padding: auto;
     }
   }

@@ -1,6 +1,51 @@
 /* CSS Variables for Font Sizes */
 
+  .testt{
+    height: 20em;
+    border: 2px solid orange;
+    position: fixed;
+  }
+:root{
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--blue);
+  --accent: var(--white);
+}
+
+  #progress {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+    border: 1px solid yellow;
+    z-index: 1000;
+  }
   
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+  }
+  
+  .bg {
+    stroke: var(--accent);
+    opacity: 0.3;
+  }
+  
+  #progress .indicator {
+    stroke: var(--accent);
+  }
   /* Main Hero Section Container */
   .hero-section {
     display: flex;
@@ -11,7 +56,8 @@
     gap: 20px;
     width: 98vw;
     overflow: hidden;
-    margin-top: 5rem;
+    height: 100vh;
+    /* margin-top: 5rem; */
 }
 .hero-container{
     padding: 1em 10rem;
@@ -20,18 +66,26 @@
   
   /* Left Content */
   .hero-left {
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     width: 75%;
+  }
+  .hero-letter{
+    display: flex;
+    flex-wrap: nowrap;
   }
   
   .hero-title {
     font-size: var(--fs-xl);
     margin-bottom: 15px;
     color: var(--co-1);
+    font-weight: 600;
   }
   .hero-job {
     font-size: var(--fs-l);
     color: var(--co-3);
-    margin: 1em 0em;
+    margin: .5em 0em;
     height: max-content;
   }
   
@@ -69,6 +123,7 @@
     font-size: var(--fs-s);
     border: 1px solid var(--co-2);
     transition: background-color 0.3s ease;
+    width: max-content;
   }
   
   .hero-resume:hover {
@@ -108,9 +163,10 @@
     .hero-left {
       text-align: center;
     }
+   
   
     .hero-title {
-      font-size: var(--fs-xl); /* Slightly smaller font for tablets */
+      font-size: var(--fs-xl); 
     }
   .hero-job{
     font-size: var(--fs-l);
@@ -146,8 +202,13 @@
     .hero-left {
       text-align: center;
     }
-  
+    .hero-letter{
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
     .hero-title {
+      flex-wrap: nowrap;
       font-size: var(--fs-m); /* Smaller font for mobile */
     }
     .hero-job{

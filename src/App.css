@@ -18,8 +18,8 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--co-1) var(--co-4);
   scroll-behavior: smooth;
-  scroll-snap-type:y mandatory;
-  scroll-snap-align: start;
+  /* scroll-snap-type:y mandatory; */
+  /* scroll-snap-align: start; */
   
     
 }
@@ -31,13 +31,13 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: black; /* Fallback background color */
-  background-image: url('/assets/bg.webp'); /* Path to your image */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-size: cover; /* Scale image to cover entire viewport */
-  background-attachment: fixed; /* Fix the image in place */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  -ms-overflow-style: -ms-autohiding-scrollbar; /* IE-specific scrollbar styling */
+  background-color: black; 
+  background-image: url('/assets/bg.webp'); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed;
+  overflow-y: scroll; 
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
 
 }

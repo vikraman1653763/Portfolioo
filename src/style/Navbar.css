@@ -7,6 +7,7 @@
     /* padding: 10px 20px; */
     background-color: transparent; 
     top: 0%;
+    left: 0%;
     z-index: 100;
     transition: all 0.3s ease-in-out;
   }
@@ -21,8 +22,8 @@
 
   .navbar-left svg{
     color:  var(--co-3);
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
   }
   .navbar-left span{
       font-size: var(--fs-m);
@@ -97,9 +98,8 @@
     flex-direction: row;
     width: 96vw;
     align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.9); 
     position: relative;
+    
   }
 
   .navbar-left {
@@ -123,8 +123,8 @@
     width: 2em;
     position: absolute;
   height: 2em;
-  right: 0%;
-  top: 1.5em;
+  right: 1em;
+  top: 1em;
   display: block;
 }
 
@@ -173,16 +173,16 @@
 }
 
 /* Wrapper for item list */
-.bm-item-list {
-  padding: 0.8em;
-}
+
 
 /* Individual item */
 .bm-item {
   display: inline-block;
+  margin: 1em;
   text-decoration: none;
   color: var(--co-1);
   text-align: center;
+  font-size: var(--fs-s);
 }
 
 /* Styling of overlay */
