@@ -9,14 +9,16 @@ import MiniProjects from './component/MiniProject';
 import Academic from './component/Academic';
 import Service from './component/Service';
 import Contact from './component/Contact';
-import Test from './component/test';
 import GitHubHeatmap from './component/GitHubHeatmap';
 import AnimatedCursor from "react-animated-cursor";
 
 function App() {
+  const isMobile = window.innerWidth <=768;
+  console.log(isMobile)
   return (
     <div className='main'>
-      <AnimatedCursor
+      {!isMobile &&(
+        <AnimatedCursor
         innerSize={8}
         outerSize={20}
         color="00ffa6"
@@ -29,15 +31,16 @@ function App() {
         innerStyle={{
           backgroundColor: '#00ffa6'
         }}
-      />
+        />
+      )}
     <Navbar/>
       <Hero/>
       <Skill/>
-      {/* <Test/> */}
+    
+      <Academic/>
       <GitHubHeatmap/>
       <Projects/>
       <MiniProjects/>
-      <Academic/>
       <Service/>
       <Contact/>
     </div>
