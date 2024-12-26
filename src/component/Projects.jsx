@@ -39,18 +39,18 @@ const Projects = () => {
         image: "/assets/mapbox.webp",
       },
       {
+        title: "Full Stack Developer Intern",
+        description:
+        "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
+        link: "https://www.linkedin.com/in/vikraman-g/overlay/1708329257687/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
+        image: "/assets/detect.webp",
+      },
+      {
         title: "Web Developer Intern",
         description:
           "Built an Ecommerce website focusing on user experience and feature-rich functionalities, showcasing my full-stack skills.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1708328853862/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
-        image: "/assets/amazon.webp",
-      },
-      {
-        title: "Full Stack Developer Intern",
-        description:
-          "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
-        link: "https://www.linkedin.com/in/vikraman-g/overlay/1708329257687/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
-        image: "/assets/detect.webp",
+        image: "/assets/watch.webp",
       },
     ],
   };
