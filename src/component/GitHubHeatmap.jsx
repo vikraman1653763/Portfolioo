@@ -76,12 +76,10 @@ const GitHubHeatmap = () => {
     }
   };
 
-  // Fetch contributions when the component mounts or when the year changes
   useEffect(() => {
     fetchContributions(selectedYear);
   }, [selectedYear]);
 
-  // Apply Tippy.js tooltips after the component is rendered
   useEffect(() => {
     tippy('[data-tooltip]', {
       content: (el) => el.getAttribute('data-tooltip'),
@@ -95,7 +93,6 @@ const GitHubHeatmap = () => {
     <section className="git-box">
       <div className="git-container">
         <h2 className="git-title">Days I Code</h2>
-
         <section className="git-commit" data-aos="fade-up">
           <CalendarHeatmap
             startDate={new Date(selectedYear, 0, 1)} // January 1st  
