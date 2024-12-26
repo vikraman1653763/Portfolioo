@@ -17,7 +17,7 @@ const GitHubHeatmap = () => {
 
   const [contributions, setContributions] = useState([]);
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear()); // Default to current year
-
+ 
 //   const token ='';  
 //  const username = ""; 
   // Function to fetch contributions based on the selected year
