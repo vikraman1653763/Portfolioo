@@ -1,88 +1,71 @@
-.color-empty {
-    fill:#dadada1a !important;
-    
-  }
-  .color-scale-1 {
-    fill: #01613f;
-  }
-  .color-scale-2 {
-    fill: #01a169;
-  }
-  .color-scale-3 {
-    fill: #02cc85;
-  }
-  .color-scale-4 {
-    fill: #00ffa6;
-  }
-  
-  .git-box{
-    padding: 2em 0em;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .git-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .git-commit{
-    width: 60%;
-    border: 1px solid var(--co-3);
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  .git-title{
-    font-size: var(--fs-xl);
-    color: var(--co-1);
-  }
-  .git-btn{
-    width: 60%;
-    display: flex;
-    justify-content: end;
-  }
-  .git-btn button{
-    background-color: rgba(0, 0, 0, 0.169);
-    padding: .5em 1em;
-    
-    margin: 1em;
-    border-radius: 5px;
-    border: 1px solid var(--co-3);
-    
-    color: var(--co-3);
-  }
-  
-  .git-btn button:hover{
-    border: 1px solid var(--co-1);
-  }
-  
+#git-cont{
+  padding: 1em 10em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: .5em;
+}
+.react-activity-calendar{
+  color: var(--co-5);
+}
+.git-title{
+  font-size: var(--fs-xl);
+  color: var(--co-1);
+  margin: .3em;
+}
+.git-year{
+  color: var(--co-5);
+  font-size: var(--fs-l);
+  margin: .5em;
+}
+
+.year-btn{
+  color: #00ffa6;
+  background-color: transparent;
+  border: 1px solid  #00ffa6;
+  padding: .3em;
+  margin: .4em;
+  border-radius: 5px;
+}
+.year-btn:hover{
+  border: 1px solid #ff9900;
+  transform: rotate(-20deg);
+}
+.year-container{
+  margin: .5em;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  color: #ffffff56;
+}
   @media screen and (max-width: 767px) {
-    
-    .git-container{
-      padding: 0%;
-      margin: 0%;
-      width: 100%;
+    #git-cont{
+      margin: 0;
+      padding: 0.4em 2em;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid orange;
+    }
+    .git-conty{
+      width: 70vw;
+      overflow: scroll;
+      margin-left: 0%;
+      border: 1px solid red;
+    }
+    .react-activity-calendar{
+      object-position: center;
+      width: 60%;
+    }
+    .react-activity-calendar__scroll-container{
+      scrollbar-width: 0px;
     }
     .git-title{
       font-size: var(--fs-l);
     }
-    .git-commit{
-      width:90%;
-      padding: 1%;
-      
-    }
-    .git-btn{
-      width: 100%;
-        justify-content: center;
-    }
-    .git-btn{
+    .git-year{
       font-size: var(--fs-s);
-      padding: auto;
     }
   }
