@@ -14,7 +14,6 @@ import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   const isMobile = window.innerWidth <=768;
-  console.log(isMobile)
   return (
     <div className='main'>
       {!isMobile &&(
