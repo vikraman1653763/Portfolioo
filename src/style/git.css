@@ -28,7 +28,6 @@
   border-radius: 5px;
 }
 .year-btn:hover{
-  border: 1px solid #ff9900;
   transform: rotate(-20deg);
 }
 .year-container{
@@ -47,25 +46,24 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid orange;
     }
     .git-conty{
       width: 70vw;
       overflow: scroll;
       margin-left: 0%;
-      border: 1px solid red;
     }
     .react-activity-calendar{
       object-position: center;
-      width: 60%;
+      width: 80%;
     }
-    .react-activity-calendar__scroll-container{
-      scrollbar-width: 0px;
-    }
+    
     .git-title{
       font-size: var(--fs-l);
     }
     .git-year{
       font-size: var(--fs-s);
+    }
+    .react-activity-calendar__footer{
+      margin-left: 0px !important;
     }
   }
