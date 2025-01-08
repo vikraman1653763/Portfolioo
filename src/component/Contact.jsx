@@ -15,6 +15,7 @@ const Contact = () => {
 
   return (
     <div className="footer-container">
+      <img src="/assets/wave.png" className="footer-wave"/>
       <section className="contact-container">
         <div className="contact-image" data-aos="fade-up">
           <img src={contact} alt="Contact" />

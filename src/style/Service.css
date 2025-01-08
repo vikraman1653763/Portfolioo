@@ -1,6 +1,7 @@
 .service-container {
     padding: 2em 10rem;
     text-align: center;
+    margin-bottom: 10em;
   }
   
   .service-title {
@@ -90,6 +91,8 @@
   @media screen and (max-width: 767px) {
     .service-container {
       padding: 1em;
+      margin-bottom: 1em;
+
     }
   
     .service-title {
@@ -121,6 +124,7 @@
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     .service-container {
       padding: 1em 5rem;
+      margin: 1em;
     }
   
     .service-title {
