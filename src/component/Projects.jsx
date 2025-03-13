@@ -25,9 +25,16 @@ const Projects = () => {
       {
         title: "DragonTech Solutions",
         description:
-          "Worked as a 2-member team, designed and developed the frontend and backend for delivering IT solutions.",
+          "Designed and developed a robust IT solutions platform, handling both frontend and backend as part of a 2-member team",
         link: "https://dragontechsolutions.com",
         image: "/assets/dts.webp",
+      },
+      {
+        title: "Venkataeswara Hospitals",
+        description: "Developed a modern and responsive website to enhance patient engagement and streamline hospital services",
+
+        link: "https://www.vhospitals.com",
+        image: "/assets/vhosp.webp",
       },
     ],
     internship: [
