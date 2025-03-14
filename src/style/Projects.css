@@ -297,6 +297,8 @@
     }
     .project-link{
       font-size: var(--fs-xs);
+      text-align: center;
+      width: 100%;
     }
     .project-card-title{
       margin: .5em;
