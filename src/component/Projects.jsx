@@ -27,14 +27,14 @@ const Projects = () => {
         description:
           "Designed and developed a robust IT solutions platform, handling both frontend and backend as part of a 2-member team",
         link: "https://dragontechsolutions.com",
-        image: "/assets/dts.webp",
+        image: "/assets/dt.webp",
       },
       {
         title: "Venkataeswara Hospitals",
         description: "Developed a modern and responsive website to enhance patient engagement and streamline hospital services",
 
         link: "https://www.vhospitals.com",
-        image: "/assets/vhosp.webp",
+        image: "/assets/vh.webp",
       },
     ],
     internship: [
@@ -43,14 +43,14 @@ const Projects = () => {
         description:
           "Developed a dashboard for users with dynamic mapping, workflow management, and secure login using OTP verification. Integrated geospatial data via GeoServer and PostgreSQL.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1714546205584/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
-        image: "/assets/mapbox.webp",
+        image: "/assets/webgis.webp",
       },
       {
         title: "Full Stack Developer Intern",
         description:
         "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1708329257687/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
-        image: "/assets/detect.webp",
+        image: "/assets/aitool.webp",
       },
       {
         title: "Web Developer Intern",
