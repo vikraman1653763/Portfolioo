@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "../style/Contact.css";
-import contact from "/assets/contact.webp";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaSquareFacebook, FaSquareInstagram, FaSquareThreads } from "react-icons/fa6";
+import Tom from "./Tom.jsx";
 
 const Contact = () => {
   useEffect(() => {
@@ -13,19 +14,24 @@ const Contact = () => {
     });
   }, []);
 
+
   return (
     <div className="footer-container">
-      <img src="/assets/wave.png" className="footer-wave"/>
+      <img src="/assets/wave.png" className="footer-wave" alt="Wave" />
       <section className="contact-container">
         <div className="contact-image" data-aos="fade-up">
-          <img src={contact} alt="Contact" />
+          <Tom />
         </div>
+
         <div className="contact-details">
+          {/* Staggered Title Animation */}
           <h2 className="contact-title">Find me on</h2>
+
           <p className="contact-description">
             Have a project idea, collaboration in mind, or just want to say hi? Reach out to me anytime—I'm always
             excited to connect with like-minded individuals and teams!
           </p>
+
           <ul className="contact-info">
             <li>
               Email: <a href="mailto:vikraman1653763@gmail.com">vikraman1653763@gmail.com</a>
@@ -34,7 +40,7 @@ const Contact = () => {
               Phone: <a href="tel:+916383606300">6383606300</a>
             </li>
             <li id="contact">
-              LinkedIn:{" "}
+              LinkedIn: {" "}
               <a href="https://www.linkedin.com/in/vikraman-g/" target="_blank" rel="noopener noreferrer">
                 linkedin.com/in/vikraman-g
               </a>
@@ -42,10 +48,15 @@ const Contact = () => {
           </ul>
         </div>
       </section>
+
       <hr className="hero-line" />
+
       <footer>
-        <div className="footer-dev">Designed and developed by <span>me</span></div>
+        <div className="footer-dev">
+          Designed and developed by <span>me</span>
+        </div>
         <div className="footer-copy">Copyright © 2024</div>
+
         <div className="footer-social">
           <a
             href="https://www.facebook.com/share/1GDqYu47ax/"

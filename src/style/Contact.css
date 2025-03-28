@@ -38,15 +38,21 @@ background-color: transparent;
 }
 
 .contact-image {
-  height: 100%;
-  
+  width: 40%;
+  height: 300px;
+  display: flex; /* Ensures child alignment works */
+  justify-content: center; /* Horizontally center the child */
+  align-items: center; /* Vertically center the child */
+  overflow: hidden; 
 }
 
-.contact-image img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 8px;
+.contact-tom {
+  width: 200%;
+  height: 200%;
+  object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+  object-position: center; /* Centers the object inside the container */
 }
+
 
 .contact-details {
   flex: 1;
@@ -135,6 +141,7 @@ footer{
   color: var(--co-3);
   background-color: var(--co-4);
 }
+
 /* Responsive Design for Mobile and Tablet Screens */
 @media screen and (max-width: 767px) {
   .footer-container{
