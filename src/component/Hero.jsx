@@ -54,14 +54,17 @@ const Hero = () => {
               speed={200} 
               delay={100} 
               /></strong></h4>
-        <motion.p 
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration:1,ease:'easeInOut',delay: .5}}
 
-        className="hero-description">
-          Crafting dynamic websites, from UI design to deployment, with a knack for seamless user experiences.
-        </motion.p>
+              <div className='para-container'>
+
+                <motion.p 
+                    initial={{ y: "120%" }}
+                    animate={{ y: "0%" }}
+                    transition={{ duration: .7, ease: "easeInOut" }}
+                    className="hero-description">
+                            Crafting dynamic websites, from UI design to deployment, with a knack for seamless user experiences.
+                </motion.p>
+          </div>
         <div className="hero-links">
           <motion.a 
              initial={{scale:0}}
@@ -79,13 +82,16 @@ const Hero = () => {
              transition={{duration:1,ease:'easeInOut',delay: .9}}
              href="https://stackoverflow.com/users/23576407/vikraman-g" target="_blank" rel="noopener noreferrer" className="hero-link"><ImStackoverflow/></motion.a>
         </div>
+        <div className="resume-container">
+
         <motion.button 
-           initial={{scale:0,filter: "blur(5px)",duration:.1}}
-           animate={{scale:1,filter: "blur(0px)" }}
-           transition={{duration:1.2,ease:'easeInOut',delay: 1 }}
+            initial={{ y: "120%" }}
+            animate={{ y: "0%" }}
+            transition={{ duration: .7, delay:.5, ease: "easeInOut" }}
         
            onClick={downloadPDF} className="hero-resume">View My Resume
            </ motion.button>
+      </div>
       </div>
       <div className="hero-right">
         <img 

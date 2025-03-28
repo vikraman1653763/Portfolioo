@@ -112,6 +112,22 @@
   .hero-link:hover {
     color: var(--co-3); /* Gold effect on hover */
   }
+  .para-container{
+    position: relative;
+    height: 50px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume-container {
+    position: relative;
+    height: 50px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .hero-resume {
     display: inline-block;
