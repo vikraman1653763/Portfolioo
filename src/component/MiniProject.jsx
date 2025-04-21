@@ -8,7 +8,7 @@ function MiniProject() {
 
   const miniProjects = [
     {title: "Weather Monitor", image: '/assets/weather.webp', git: 'https://github.com/vikraman1653763/Weather.git'},
-    {title: "Calculator", image: '/assets/calc.webp', git: 'https://github.com/vikraman1653763/calculator.git'},
+    // {title: "Calculator", image: '/assets/calc.webp', git: 'https://github.com/vikraman1653763/calculator.git'},
     {title: "Amazon Clone", image: '/assets/amazon.webp', git: 'https://github.com/vikraman1653763/Amazon.git'},
     {title: "Login with Email Verification", image: '/assets/login.webp', git: 'https://github.com/vikraman1653763/intern2024_2.git'},
     {title: "WebGIS Project", image: '/assets/webgis.webp', git: 'https://github.com/vikraman1653763/intern2024_2.git'},

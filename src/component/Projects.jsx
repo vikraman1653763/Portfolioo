@@ -20,6 +20,13 @@ const Projects = () => {
         link: "https://xagrotortek.in",
         image: "/assets/xag.webp",
       },
+      {
+        title: "Think ITech",
+        description:
+        "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
+        link: "https://thinkitech.com",
+        image: "/assets/think.webp",
+      },
     ],
     freelance: [
       {

@@ -30,7 +30,7 @@
     justify-content: center;
   }
   .project-card {
-    background-color: rgba(0, 0, 0, 0.409); /* Dark gray card background */
+    background-color: rgba(0, 0, 0, 0.409);
     border-radius: 0.5rem;
     padding: 1rem;
     width: calc(33.333% - 1rem);
@@ -39,12 +39,14 @@
     
 }
 .work .project-card{ 
-    width: 50%;
+    width: calc(40% - 2em);
+    box-sizing: border-box;
 }
 .freelance {
   display: flex;
   width: 100%;
 }
+
 .freelance .project-card{
   flex-direction: row;
   flex-wrap: nowrap;
