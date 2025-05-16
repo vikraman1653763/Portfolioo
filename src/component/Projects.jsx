@@ -18,14 +18,14 @@ const Projects = () => {
         description:
           "Fully built a website from UI design to hosting and SEO optimization for a drone manufacturing company.",
         link: "https://xagrotortek.in",
-        image: "/assets/xag.webp",
+        image: "/assets/xag2.webp",
       },
       {
         title: "Think ITech",
         description:
         "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
         link: "https://thinkitech.com",
-        image: "/assets/think.webp",
+        image: "/assets/think2.webp",
       },
     ],
     freelance: [
