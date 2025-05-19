@@ -35,7 +35,6 @@ function App() {
     <Navbar/>
       <Hero/>
       <Skill/>
-    
       <Academic/>
       <GitHubHeatmap/>
       <Projects/>

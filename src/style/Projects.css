@@ -1,7 +1,11 @@
 .projects-container {
     padding: 1em 10rem;
     color: var(--co-2); /* White text */
-
+  position: relative;
+  }
+ 
+  .code-icon{ 
+    position: absolute;
   }
   .projects-work-free{
     display: flex;

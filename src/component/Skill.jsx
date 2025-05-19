@@ -15,6 +15,8 @@ import { FaGithub } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
+import pyy from '/assets/python.svg'
+
 
 const Skill = () => {
   useEffect(()=>{
@@ -48,9 +50,18 @@ const Skill = () => {
       icons: [<FaCpanel />, <SiNetlify />, <FaGithub />],
     },
   ];
+
+
+ 
+    
+
   return (
     <section className="skill-container">
+      <img src={pyy} className='pyy-icon'/>
       <h2 className="skill-title">Tech Arsenal</h2>
+      
+       
+
       <p className="skill-description">The tools I use to bring ideas to life</p>
       <div className="skill-cards">
         {skills.map((skill, index) => (
@@ -69,3 +80,11 @@ const Skill = () => {
   );
 };
 export default Skill;
+
+
+
+
+    
+
+
+

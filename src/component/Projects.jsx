@@ -2,6 +2,8 @@ import React,{useEffect} from 'react';
 import "../style/Projects.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Text3 from './Text3';
+
 const Projects = () => {
   
   useEffect(()=>{
@@ -71,6 +73,8 @@ const Projects = () => {
 
   return (
     <section className="projects-container" id='work'>
+                <Text3 className='code-icon'/>
+
       <h2 className="projects-title">Projects</h2>
       <section className='projects-work-free'>
 
