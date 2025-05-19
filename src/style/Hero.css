@@ -188,7 +188,7 @@
     font-size: var(--fs-l);
   }
     .hero-description {
-      font-size: var(--fs-s); /* Adjust font size for better fit */
+      font-size: var(--fs-s);
     }
   
     .hero-right {
@@ -230,10 +230,13 @@
     .hero-job{
       font-size: var(--fs-m);
     }
-  
+    .para-container{
+      height: auto;
+    }
     .hero-description {
       font-size: var(--fs-s); 
-      text-align: center;/* Adjust font size */
+      text-align: center;
+
     }
   
     .hero-links {

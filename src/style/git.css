@@ -40,7 +40,7 @@
   @media screen and (max-width: 767px) {
     #git-cont{
       margin: 0;
-      padding: 0.4em 2em;
+      padding: 0.4em 1em;
       width: auto;
       display: flex;
       flex-direction: column;
@@ -48,7 +48,7 @@
       align-items: center;
     }
     .git-conty{
-      width: 70vw;
+      width: 90vw;
       overflow: scroll;
       margin-left: 0%;
     }

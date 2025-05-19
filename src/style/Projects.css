@@ -7,6 +7,7 @@
   .code-icon{ 
     position: absolute;
   }
+
   .projects-work-free{
     display: flex;
     flex-direction: column;
@@ -326,6 +327,8 @@
   .mini-project-container-sticky .title{
     transform: translateX(0);
     font-size: var(--fs-m);
+    text-align: center;
+    width: 100%;
   }
     .mini-project-container-sticky {
       width: 100%; /* Full width for sticky container */
