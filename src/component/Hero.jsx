@@ -1,10 +1,12 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import '../style/Hero.css';
 import { ImStackoverflow } from "react-icons/im";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 import TypingEffect from "./TypingEffect.jsx";
-import { motion} from 'framer-motion';
+import SlotNameReel from './Slot.jsx';
+
 const Hero = () => {
   const downloadPDF= ()=>{
     const pdf = '/assets/Resume.pdf'
@@ -16,37 +18,22 @@ const Hero = () => {
     document.body.removeChild(link);
   }
 
-  const name = "H.i, I.'.m V.i.k.r.a.m.a.n G";
-  const letters = name.split("."); // Split name into individual characters
+  const word = 'Vikraman G';
 
-  const animations = letters.map((_, index) => ({
-    initial: {
-      opacity: 0,
-      x: index % 2 === 0 ? -8 : 10, // Alternate direction for each letter
-      y: index % 3 === 0 ? -7 : 15, // Add variation in vertical movement
-    },
-    animate: { opacity: 1, x: 0, y: 0 },
-    transition: { duration: 0.5, delay: index * 0.1 }, // Stagger letters
-  }));
+ 
   return (
     <section className="hero-section" id='about'>
         <div className='hero-container'>
 
       <div className="hero-left">
       <div className='hero-letter'>
-
-      {letters.map((letter, index) => (
-        <motion.span
-          key={index}
-          initial={animations[index].initial}
-          animate={animations[index].animate}
-          transition={animations[index].transition}
-          style={{ display: "inline-block" }}
-          className='hero-title'
-        >
-          {letter}
-        </motion.span>
-      ))}
+        <p className='hero-im'><Hi/> I'm</p>
+      <div className="slot-name-wrapper flex gap-1 p-4 bg-gray-100">
+            {word.split('').map((char, index) => (
+              <SlotNameReel key={index} target={char} />
+            ))}
+      </div>
+     
       </div>
 
         <h4 className='hero-job'><strong><TypingEffect
@@ -106,3 +93,46 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const Hi = () => {
+  const [showVideo, setShowVideo] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowVideo(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="hero-hi-container">
+      <AnimatePresence mode="wait">
+        {showVideo ? (
+          <motion.video
+            key="hi-video"
+            src="/assets/hi.webm"
+            className="hero-hi-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            width={40}
+            height={40}
+            initial={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 2 }}
+          />
+        ) : (
+          <motion.span
+          
+            key="hi-text"
+            className="hero-hi-text"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1 }}
+          >
+            Hi
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
