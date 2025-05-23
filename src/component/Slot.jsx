@@ -15,12 +15,12 @@ export default function SlotNameReel({ target }) {
 });
 
   return (
-    <div className="slot-name-container overflow-hidden h-[40px] w-[30px] border border-gray-300">
+    <div className="slot-name-container ">
       <animated.div style={styles} className="slot-name-strip">
         {LETTERS.map((char) => (
           <div
             key={char}
-            className="slot-name-letter text-center text-xl font-mono h-[40px] leading-[40px]"
+            className="slot-name-letter "
           >
             {char}
           </div>
