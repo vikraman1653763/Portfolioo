@@ -8,35 +8,51 @@ import { motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
+
 const quote = "“IT’S WHAT WE DO THAT DEFINES US”";
 const getRandomDelay = () => Math.random();
 
 const BlinkingQuote = () => {
+  const words = quote.split(" ");
+
   return (
-    <p className="service-quote">
-      {quote.split("").map((char, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 1 }}
-          whileInView={{ opacity: [0 ,0.3 , 0.5 ,0.8 ,1] }}
-          transition={{
-            duration: 1,
-            delay: getRandomDelay(),
-            repeat: 1,
-            ease: "linear",
-          }}
-          viewport={{ once: true }}
+    <p
+      className="service-quote"
+    >
+      {words.map((word, wIndex) => (
+        <span
+          key={wIndex}
           style={{
-            display: "inline-block",
-            whiteSpace: "pre", 
+            display: "flex",
+            flexWrap: "nowrap",
+            whiteSpace: "nowrap",  
           }}
         >
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
+          {word.split("").map((char, cIndex) => (
+            <motion.span
+              key={cIndex}
+              initial={{ opacity: 1 }}
+              whileInView={{ opacity: [0, 0.3, 0.5, 0.8, 1] }}
+              transition={{
+                duration: 1,
+                delay: getRandomDelay(),
+                repeat: 1,
+                ease: "linear",
+              }}
+              viewport={{ once: true }}
+              style={{ display: "inline-block" }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </span>
       ))}
     </p>
   );
 };
+
+
 
 
 const Service = () => {
