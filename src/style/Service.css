@@ -5,7 +5,7 @@
   }
   
   .service-title {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-m);
     color: var(--co-1);
     margin-bottom: 1rem;
   }
@@ -14,12 +14,26 @@
     color: var(--co-3);
   }
   
-  .service-description {
-    font-size: var(--fs-s);
-    color: var(--co-2);
-    margin-bottom: 2rem;
+  .service-quote {
+    font-size: var(--fs-xl);
+    color: aliceblue;
+    line-height: 0%;
+    font-weight: 800;
   }
   
+  .service-author{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fs-m);
+    justify-content: right;
+    align-items: center;
+    width: 83%;
+  }
+  .service-bat-logo{
+    width: 70px;
+    height: 50px;
+  }
   .service-cards {
     display: flex;
     flex-wrap: wrap;
@@ -96,13 +110,10 @@
     }
   
     .service-title {
-      font-size: var(--fs-l);
-    }
-  
-    .service-description {
-      text-align: justify;
       font-size: var(--fs-s);
     }
+  
+   
   
     .service-cards {
       gap: 1rem;
@@ -119,6 +130,17 @@
     .service-card-description{
       margin: 0%;
     }
+    .service-quote{
+      font-size: var(--fs-m);
+      text-align: center;
+      line-height: 100%;
+      margin: 5px;
+    }
+    .service-author{
+      font-size: var(--fs-s);
+      width: 100%;
+      margin: 5px;
+    }
   }
   
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -131,7 +153,7 @@
       font-size: var(--fs-l);
     }
   
-    .service-description {
+    .service-quote {
       font-size: var(--fs-s);
     }
   
@@ -141,6 +163,16 @@
   
     .service-card {
       max-width: 45%;
+    }
+    .service-title{
+      font-size: var(--fs-m);
+    }
+    .service-quote{
+      font-size: var(--fs-l);
+    }
+    .service-author{
+      font-size: var(--fs-s);
+      width: 100%;
     }
   }
   

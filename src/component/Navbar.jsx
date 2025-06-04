@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../style/Navbar.css"; // Import styles
 import { LiaVine } from "react-icons/lia";
 import { fallDown as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
