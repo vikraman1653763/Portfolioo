@@ -140,7 +140,7 @@
       text-align: center;
       line-height: 100%;
       margin: 5px;
-      border: 1px solid red;
+      
     }
     .service-author{
       font-size: var(--fs-s);
