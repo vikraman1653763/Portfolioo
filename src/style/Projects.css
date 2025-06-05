@@ -1,6 +1,6 @@
 .projects-container {
     padding: 1em 10rem;
-    color: var(--co-2); /* White text */
+    color: var(--co-2); 
   position: relative;
   }
  
@@ -78,7 +78,7 @@
   
   .project-card-title {
     font-size: var(--fs-m);
-    color: var(--co-1); /* Orange for card titles */
+    color: var(--co-1); 
     margin-top: 0.5rem;
   }
   
@@ -143,6 +143,7 @@
     top: 0%;
     left: 0%;
   }
+  
   .mini-project-scroll-content {
     display: flex;
     gap: 32px;
@@ -159,19 +160,17 @@
     background-color: rgba(0, 0, 0, 0.5);
     object-fit: cover;
   } 
+
   .mini-project-card  img{
     object-fit: cover;
     object-position: center;
     width: 100%;
   }
-    
   .mini-project-detail{
     display: flex;
     justify-content: space-between;
     width: 90%;
-    /* padding: 0em 1em; */
     margin: 0em 1em;
-    /* border: 1px solid yellow; */
   }
   .mini-project-detail a  {
     display: flex;
