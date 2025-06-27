@@ -1,18 +1,16 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from "react";
 import "../style/Projects.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-import Text3 from './Text3';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Text3 from "./Text3";
 
 const Projects = () => {
-  
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      duration:1000,
-      easing:'ease'
-    }
-    );
-  },[])
+      duration: 1000,
+      easing: "ease",
+    });
+  }, []);
   const projects = {
     work: [
       {
@@ -25,9 +23,16 @@ const Projects = () => {
       {
         title: "Think ITech",
         description:
-        "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
+          "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
         link: "https://thinkitech.com",
         image: "/assets/think2.webp",
+      },
+      {
+        title: "Task Manager Application",
+        description:
+          "A full-stack task manager built with MERN with Tailwind CSS includes role-based access, task tracking, report export, and responsive UI .",
+        link: "https://youtu.be/Wk__CVnpkic?si=Vtnr3Q8KcHonab9D",
+        image: "/assets/tm.webp",
       },
     ],
     freelance: [
@@ -40,7 +45,8 @@ const Projects = () => {
       },
       {
         title: "Venkataeswara Hospitals",
-        description: "Developed a modern and responsive website to enhance patient engagement and streamline hospital services",
+        description:
+          "Developed a modern and responsive website to enhance patient engagement and streamline hospital services",
 
         link: "https://www.vhospitals.com",
         image: "/assets/vh.webp",
@@ -57,7 +63,7 @@ const Projects = () => {
       {
         title: "Full Stack Developer Intern",
         description:
-        "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
+          "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1708329257687/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
         image: "/assets/aitool.webp",
       },
@@ -72,24 +78,43 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects-container" id='work'>
-                <Text3 className='code-icon'/>
+    <section className="projects-container" id="work">
+      <Text3 className="code-icon" />
 
       <h2 className="projects-title">Projects</h2>
-      <section className='projects-work-free'>
-
+      <section className="projects-work-free">
         {/* Work Section */}
         <div className="projects-section">
           <h3 className="projects-subtitle">Work</h3>
           <div className="projects-cards work" data-aos="fade-up">
             {projects.work.map((project, index) => (
               <div key={index} className="project-card">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
                 <h4 className="project-card-title">{project.title}</h4>
                 <p className="project-description">{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  Visit Website
-                </a>
+                {project.title === "Task Manager Application" ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    View Demo
+                  </a>
+                ) : (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    Visit Website
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -101,10 +126,19 @@ const Projects = () => {
           <div className="projects-cards freelance" data-aos="fade-up">
             {projects.freelance.map((project, index) => (
               <div key={index} className="project-card">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
                 <h4 className="project-card-title">{project.title}</h4>
                 <p className="project-description">{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
                   Visit Website
                 </a>
               </div>
@@ -118,18 +152,26 @@ const Projects = () => {
         <h3 className="projects-subtitle">Internships</h3>
         <div className="projects-cards internship">
           {projects.internship.map((project, index) => (
-            <div key={index} className="project-card" data-aos="fade-up" >
-              <img src={project.image} alt={project.title} className="project-image" />
+            <div key={index} className="project-card" data-aos="fade-up">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
               <h4 className="project-card-title">{project.title}</h4>
               <p className="project-description">{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
                 Learn More
               </a>
             </div>
           ))}
         </div>
       </div>
-
     </section>
   );
 };
