@@ -35,7 +35,7 @@ const Projects = () => {
         description:
           "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
         link: "https://thinkitech.com",
-        image: "/assets/think2.webp",
+        image: "/assets/think3.webp",
         techBadges: ["React", "Framer Motion", "SEO", "Plesk"],
       },
       {
