@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../style/Skill.css";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { SiCss3 } from "react-icons/si";
+import { SiCss3, SiExpress, SiFlask, SiPostman, SiRender } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { FaPython } from "react-icons/fa";
@@ -17,6 +17,9 @@ import "aos/dist/aos.css";
 
 import pyy from "/assets/python.svg";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { GiEarthAfricaEurope } from "react-icons/gi";
+import { VscCode, VscVscodeInsiders } from "react-icons/vsc";
+import { BsGlobeEuropeAfrica } from "react-icons/bs";
 
 const Skill = () => {
   useEffect(() => {
@@ -40,8 +43,8 @@ const Skill = () => {
     },
     {
       title: "Backend",
-      description: "Node.js, Python",
-      icons: [<IoLogoNodejs />, <FaPython />],
+      description: "Node.js, Epxress.js, Python, Flask",
+      icons: [<IoLogoNodejs />,<SiExpress/>, <FaPython /> ,<SiFlask/>],
     },
     {
       title: "Database",
@@ -50,9 +53,14 @@ const Skill = () => {
     },
     {
       title: "Hosting",
-      description: "cPanel, Netlify, GitHub Pages",
-      icons: [<FaCpanel />, <SiNetlify />, <FaGithub />],
+      description: "cPanel, Netlify, GitHub, Render",
+      icons: [<FaCpanel />, <SiNetlify />, <FaGithub /> ,<SiRender/>],
     },
+    {
+      title:"DevTools",
+      description:"Postman , VSCode , Geoserver",
+      icons:[<SiPostman/>,<VscVscodeInsiders/>,<BsGlobeEuropeAfrica/> ]
+    }
   ];
 
   return (

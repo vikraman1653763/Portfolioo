@@ -3,6 +3,7 @@ import "../style/Projects.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Text3 from "./Text3";
+import Badges from "./badges/Badges";
 
 const Projects = () => {
   useEffect(() => {
@@ -19,6 +20,15 @@ const Projects = () => {
           "Fully built a website from UI design to hosting and SEO optimization for a drone manufacturing company.",
         link: "https://xagrotortek.in",
         image: "/assets/xag2.webp",
+        techBadges: [
+          "React",
+          "Node",
+          "MySql",
+          "Express",
+          "Framer Motion",
+          "Axios",
+          "CPanel",
+        ],
       },
       {
         title: "Think ITech",
@@ -26,6 +36,7 @@ const Projects = () => {
           "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
         link: "https://thinkitech.com",
         image: "/assets/think2.webp",
+        techBadges: ["React", "Framer Motion", "SEO", "Plesk"],
       },
       {
         title: "Task Manager Application",
@@ -33,6 +44,16 @@ const Projects = () => {
           "A full-stack task manager built with MERN with Tailwind CSS includes role-based access, task tracking, report export, and responsive UI .",
         link: "https://youtu.be/Wk__CVnpkic?si=Vtnr3Q8KcHonab9D",
         image: "/assets/tm.webp",
+        techBadges: [
+          "React",
+          "Tailwind",
+          "Node",
+          "Netlify",
+          "Render",
+          "MongoDB",
+          "Axios",
+          "JWT",
+        ],
       },
     ],
     freelance: [
@@ -42,6 +63,9 @@ const Projects = () => {
           "Designed and developed a robust IT solutions platform, handling both frontend and backend as part of a 2-member team",
         link: "https://dragontechsolutions.com",
         image: "/assets/dt.webp",
+         techBadges: [
+         "React" , "Node" , "Express" ,'Cpanel' ,'SMTP'
+        ],
       },
       {
         title: "Venkataeswara Hospitals",
@@ -50,6 +74,9 @@ const Projects = () => {
 
         link: "https://www.vhospitals.com",
         image: "/assets/vh.webp",
+         techBadges: [
+         "React" , "Node" ,"Framer Motion", "Express" ,'Cpanel' ,'SMTP'
+        ],
       },
     ],
     internship: [
@@ -59,6 +86,9 @@ const Projects = () => {
           "Developed a dashboard for users with dynamic mapping, workflow management, and secure login using OTP verification. Integrated geospatial data via GeoServer and PostgreSQL.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1714546205584/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
         image: "/assets/webgis.webp",
+         techBadges: [
+          "Python","Flask","MapBox","PostgreSql","Geoserver"
+        ],
       },
       {
         title: "Full Stack Developer Intern",
@@ -66,6 +96,9 @@ const Projects = () => {
           "Created a fault detection website using YOLOv8 for defect detection, a user-friendly UI for image editing, and MySQL for data storage.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1708329257687/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
         image: "/assets/aitool.webp",
+         techBadges: [
+          "Jinja","Flask" ,"Python" ,"MySql"
+        ],
       },
       {
         title: "Web Developer Intern",
@@ -73,6 +106,9 @@ const Projects = () => {
           "Built an Ecommerce website focusing on user experience and feature-rich functionalities, showcasing my full-stack skills.",
         link: "https://www.linkedin.com/in/vikraman-g/overlay/1708328853862/single-media-viewer/?profileId=ACoAAEAwQyMBGlmKid_VvSAIQYSCrS6eBSdYaXY",
         image: "/assets/watch.webp",
+         techBadges: [
+         "React" ,"Bootstrap","CSS","Git" ,"Netlify"
+        ],
       },
     ],
   };
@@ -96,6 +132,14 @@ const Projects = () => {
                 />
                 <h4 className="project-card-title">{project.title}</h4>
                 <p className="project-description">{project.description}</p>
+                
+                {project.techBadges && (
+                  <div className="project-badge">
+                    <Badges techBadges={project.techBadges} />
+                  </div>
+                )}
+
+
                 {project.title === "Task Manager Application" ? (
                   <a
                     href={project.link}
@@ -133,6 +177,11 @@ const Projects = () => {
                 />
                 <h4 className="project-card-title">{project.title}</h4>
                 <p className="project-description">{project.description}</p>
+                {project.techBadges && (
+                  <div className="project-badge">
+                    <Badges techBadges={project.techBadges} />
+                  </div>
+                )}
                 <a
                   href={project.link}
                   target="_blank"
@@ -160,6 +209,11 @@ const Projects = () => {
               />
               <h4 className="project-card-title">{project.title}</h4>
               <p className="project-description">{project.description}</p>
+               {project.techBadges && (
+                  <div className="project-badge">
+                    <Badges techBadges={project.techBadges} />
+                  </div>
+                )}
               <a
                 href={project.link}
                 target="_blank"

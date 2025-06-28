@@ -4,8 +4,9 @@ import '../style/Hero.css';
 import { ImStackoverflow } from "react-icons/im";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
-import TypingEffect from "./TypingEffect.jsx";
-import SlotNameReel from './Slot.jsx';
+import TypingEffect from './animations/TypingEffect.jsx';
+import SlotNameReel from './animations/SlotNameReel.jsx';
+
 
 const Hero = () => {
   const downloadPDF= ()=>{
@@ -27,7 +28,7 @@ const Hero = () => {
 
       <div className="hero-left">
       <div className='hero-letter'>
-        <p className='hero-im'><Hi/> I'm</p>
+        <div className='hero-im'><Hi/> I'm</div>
       <div className="slot-name-wrapper flex gap-1 p-4 bg-gray-100">
             {word.split('').map((char, index) => (
               <SlotNameReel key={index} target={char} />

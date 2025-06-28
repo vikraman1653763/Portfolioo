@@ -1,6 +1,6 @@
 // SlotNameReel.jsx
 import { useSpring, animated } from '@react-spring/web';
-import "../style/Name.css";
+import "../../style/Name.css";
 
 const LETTERS = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
 const LETTER_HEIGHT = 40;

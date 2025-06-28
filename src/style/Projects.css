@@ -47,7 +47,6 @@
   box-sizing: border-box;
 }
 
-
 .freelance {
   display: flex;
   width: 100%;
@@ -94,7 +93,28 @@
   color: var(--co-3);
   text-decoration: none;
 }
-
+.project-badge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+.badge-btn-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.badge-btn-text {
+  color: var(--co-2);
+  padding: 0.35em;
+  background-color: rgba(255, 255, 255, 0.100);
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid var(--co-2);
+}
 /* new  */
 
 .mini-project {
@@ -292,9 +312,8 @@
   }
 
   .project-card {
-    width: 100% !important; 
-        flex: unset;
-
+    width: 100% !important;
+    flex: unset;
   }
   .project-link {
     font-size: var(--fs-xs);

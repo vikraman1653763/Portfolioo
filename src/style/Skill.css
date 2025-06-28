@@ -100,7 +100,7 @@
   }
   
   .skill-icon {
-    font-size: var(--fs-l);
+    font-size:calc(var(--fs-l) - 10%);
     animation: float 3s infinite ease-in-out;
   }
   .skill-icon:nth-child(even){
