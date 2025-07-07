@@ -61,7 +61,7 @@ const Projects = () => {
         title: "Expense Tracker Application",
         description:
           "A full-stack expense tracker built with MERN stack, featuring income & expense management, chart visualization, category-wise insights, and authentication.",
-        link: "https://youtu.be/Qieb2KuvJ44", // update with actual demo link if available
+        link: "https://youtu.be/Qieb2KuvJ44",
         image: "/assets/et.webp",
         techBadges: [
           "React",
