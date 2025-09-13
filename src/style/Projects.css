@@ -39,6 +39,7 @@
 .project-card {
   flex: 1 1 30%;
   display: flex;
+  max-width: 34em;
   justify-content: space-between;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.409);

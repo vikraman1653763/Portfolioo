@@ -3,7 +3,7 @@ import Badges from "../badges/Badges";
 
 const Card = ({ title, description, image, link, techBadges, cta = "Visit Website" }) => {
   return (
-    <div className="project-card" data-aos="fade-up">
+    <div className="project-card " data-aos="fade-up">
       <img src={image} alt={title} className="project-image" />
       <h4 className="project-card-title">{title}</h4>
       <p className="project-description">{description}</p>

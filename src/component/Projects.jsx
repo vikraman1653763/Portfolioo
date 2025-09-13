@@ -32,6 +32,37 @@ const Projects = () => {
         ],
       },
       {
+  title: "E-Commerce Grocery Store",
+  description:
+    "Developed a full-stack grocery e-commerce platform with secure payments via Stripe, product image storage on Cloudinary, and seamless cart-to-checkout flow.",
+  link: "https://your-grocery-shop-link.com",
+  image: "/assets/grocery.png",
+  techBadges: [
+    "Node",
+    "MongoDB",
+    "Stripe",
+    "Cloudinary",
+    "Tailwind CSS",
+    "Redux",
+  ],
+},
+{
+  title: "Cloud-Powered Chat App",
+  description:
+    "Built a real-time chat application with Socket.io for instant messaging, Cloudinary for media uploads, and JWT authentication for secure user access.",
+  link: "https://your-chat-app-link.com",
+  image: "/assets/chat.png",
+  techBadges: [
+    "React",
+    "Node",
+    "MongoDB",
+    "Socket.io",
+    "Cloudinary",
+    "JWT",
+  ],
+},
+
+      {
         title: "Think ITech",
         description:
           "Designed and deployed a modern business website for a tech services firm, focusing on responsive UI, clean layout, and optimized performance.",
